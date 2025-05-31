@@ -19,11 +19,20 @@ const reducer = (state, action) => {
       return { ...state, status: "failed" };
     case "start":
       return { ...state, status: "active" };
+
     case "checkAns":
+      const question = state.questions.at(state.index);
       return {
         ...state,
         answer: action.payload,
+        point:
+          action.payload === question.correctOption
+            ? state.points + question.points
+            : state.points,
       };
+
+    case "nextQuestion":
+      return { ...state, index: state.index++ };
     default:
       throw new Error("Unknown Action");
   }
@@ -118,6 +127,14 @@ const App = () => {
                   {option}
                 </button>
               ))}
+              {answer && (
+                <button
+                  className="btn"
+                  onClick={() => dispatch({ type: "nextQuestion" })}
+                >
+                  Next
+                </button>
+              )}
             </div>
           </div>
         )}
