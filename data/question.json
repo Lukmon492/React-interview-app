@@ -1,0 +1,712 @@
+{
+  "questions": [
+    {
+      "question": "Which is the most popular JavaScript library?",
+      "options": ["Angular", "React", "Svelte", "Vue"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which company invented React?",
+      "options": ["Google", "Apple", "Netflix", "Facebook"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "What's the fundamental building block of React apps?",
+      "options": ["Components", "Blocks", "Elements", "Effects"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What syntax is used to write HTML in JavaScript files in React?",
+      "options": ["JSX", "TSX", "HTML", "JHTML"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which hook is used to add state to functional components?",
+      "options": ["useEffect", "useReducer", "useState", "useContext"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What does React use to efficiently update the UI?",
+      "options": ["Shadow DOM", "Virtual DOM", "Real DOM", "Redux"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which of these is a valid way to define a functional component?",
+      "options": [
+        "function MyComponent()",
+        "const MyComponent = () => {}",
+        "Both A and B",
+        "None"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the correct way to pass props in React?",
+      "options": [
+        "<Component prop=value />",
+        "<Component prop='value' />",
+        "Both A and B",
+        "None"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What’s the purpose of props in React?",
+      "options": [
+        "To hold state",
+        "To style components",
+        "To pass data to components",
+        "To create hooks"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which method is used to render React components into the DOM?",
+      "options": [
+        "ReactDOM.render()",
+        "render()",
+        "React.render()",
+        "createRoot()"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is returned from a functional component?",
+      "options": ["A string", "JSX", "An object", "A component"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What must be imported to use JSX?",
+      "options": ["'react'", "'react-dom'", "'jsx'", "'react-jsx'"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which keyword is used to create a React component using a class?",
+      "options": ["function", "component", "class", "new"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the default file extension for React components?",
+      "options": [".js", ".jsx", ".react", ".ts"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is NOT a React hook?",
+      "options": ["useMemo", "useState", "useEffect", "useRender"],
+      "correctOption": 3,
+      "points": 10
+    },
+
+    {
+      "question": "What is component composition in React?",
+      "options": [
+        "Using class-based components only",
+        "Combining smaller components to build complex UIs",
+        "Sharing data between sibling components",
+        "Mounting components to the DOM"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is props drilling?",
+      "options": [
+        "Using props to drill into child components directly",
+        "Passing props through many levels of components unnecessarily",
+        "Extracting props from the DOM",
+        "Using useEffect to update props"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "How can we avoid props drilling in deeply nested components?",
+      "options": ["useState", "React Router", "Context API", "useEffect"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which technique helps in reusing UI logic between components?",
+      "options": ["Higher-order components", "Props drilling", "JSX", "State"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is a higher-order component (HOC)?",
+      "options": [
+        "A component that renders multiple JSX elements",
+        "A function that takes a component and returns a new component",
+        "A component with a lot of props",
+        "A class component with extended state"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the main benefit of extracting UI into reusable components?",
+      "options": [
+        "Makes the app look bigger",
+        "Reduces performance",
+        "Encourages code duplication",
+        "Improves maintainability and reusability"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which pattern allows injecting JSX content into a reusable component?",
+      "options": [
+        "Composition",
+        "Inheritance",
+        "Props drilling",
+        "Memoization"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What keyword is used in React to insert child elements into a component?",
+      "options": [
+        "props.children",
+        "props.content",
+        "this.child",
+        "component.content"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "How can we make a component more generic and flexible?",
+      "options": [
+        "By hardcoding state",
+        "By using more useEffect calls",
+        "By using props",
+        "By only using class components"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is true about stateless components?",
+      "options": [
+        "They manage their own state",
+        "They are always class-based",
+        "They do not manage state and rely on props",
+        "They can only be used once"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What should each React component ideally do?",
+      "options": [
+        "Handle all global state",
+        "Render a specific part of the UI",
+        "Render the entire app",
+        "Maintain its own routing"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the 'key' prop in list rendering?",
+      "options": [
+        "To set accessibility roles",
+        "To identify which items have changed",
+        "To pass state between components",
+        "To set CSS styles"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which hook allows you to memoize values and avoid unnecessary recalculations?",
+      "options": ["useCallback", "useEffect", "useMemo", "useState"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which of the following helps improve performance when rendering lists?",
+      "options": [
+        "Using key props",
+        "Avoiding useMemo",
+        "Using props drilling",
+        "Forcing re-renders"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the default value of any prop not explicitly passed to a component?",
+      "options": ["undefined", "null", "false", "0"],
+      "correctOption": 0,
+      "points": 10
+    },
+
+    {
+      "question": "Which React hook is used to add local state to a component?",
+      "options": ["useEffect", "useReducer", "useState", "useMemo"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What does the useState hook return?",
+      "options": [
+        "An object with state and setState",
+        "A getter function",
+        "An array with state and updater function",
+        "A reducer function"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the primary use case for the useReducer hook?",
+      "options": [
+        "To handle side effects",
+        "To manage complex or related state logic",
+        "To fetch data",
+        "To memoize computations"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What are the two arguments required by useReducer?",
+      "options": [
+        "State and props",
+        "Reducer and initial state",
+        "Dispatch and action",
+        "Hook and component"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What does 'lifting state up' mean in React?",
+      "options": [
+        "Moving state to a parent component to share it with child components",
+        "Duplicating state across components",
+        "Replacing props with state",
+        "Removing local state"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is NOT a good practice in state management?",
+      "options": [
+        "Lifting state when needed",
+        "Using state only in needed components",
+        "Storing derived data in state",
+        "Avoiding unnecessary re-renders"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is derived state?",
+      "options": [
+        "State calculated from props or another state",
+        "State passed from parent",
+        "External state from API",
+        "Initial state only"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the role of dispatch in useReducer?",
+      "options": [
+        "To re-render the component",
+        "To initialize the reducer",
+        "To send actions to the reducer function",
+        "To call useEffect"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the Context API in React?",
+      "options": [
+        "To replace Redux entirely",
+        "To avoid prop drilling by sharing global state",
+        "To increase performance",
+        "To fetch data asynchronously"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What are the two main components used in the Context API?",
+      "options": [
+        "State and Effect",
+        "Provider and Consumer",
+        "Dispatch and Reducer",
+        "Store and Selector"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "How do you create a new context in React?",
+      "options": [
+        "React.useContext()",
+        "React.createContext()",
+        "createContextProvider()",
+        "React.makeContext()"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What does useContext hook do?",
+      "options": [
+        "Provides state globally",
+        "Returns the current context value",
+        "Renders child components",
+        "Stores global variables"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which pattern is most commonly used with useReducer and Context for complex state?",
+      "options": [
+        "State sharing",
+        "Context-based reducer",
+        "Component inheritance",
+        "useEffect chaining"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Why is it recommended to avoid unnecessary state?",
+      "options": [
+        "To improve SEO",
+        "To reduce bundle size",
+        "To avoid unnecessary re-renders",
+        "To make JSX simpler"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What can you use to group multiple state values in one stateful object?",
+      "options": [
+        "useReducer",
+        "useState with objects",
+        "Props",
+        "JSX fragments"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+
+    {
+      "question": "Which hook is used to handle side effects in React?",
+      "options": ["useState", "useEffect", "useReducer", "useCallback"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the default behavior of useEffect?",
+      "options": [
+        "Runs after every render",
+        "Runs only once",
+        "Runs before render",
+        "Runs before mounting"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which dependency array value makes useEffect run only once?",
+      "options": ["[null]", "[true]", "[]", "[undefined]"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Where should you perform data fetching in a functional component?",
+      "options": [
+        "In render()",
+        "In useEffect",
+        "In useState",
+        "Directly in JSX"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What should you return from useEffect to perform cleanup?",
+      "options": [
+        "Nothing",
+        "A useCallback function",
+        "A cleanup function",
+        "An object"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is a common use case for useEffect with no dependencies?",
+      "options": [
+        "To re-run on every re-render",
+        "To skip side effects",
+        "To mimic componentDidMount",
+        "To prevent rendering"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the correct way to perform an async function inside useEffect?",
+      "options": [
+        "Make the useEffect callback async",
+        "Use an IIFE inside useEffect",
+        "Call async outside useEffect",
+        "You can't use async inside useEffect"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What does React Router help with?",
+      "options": [
+        "Managing local state",
+        "Building forms",
+        "Handling client-side routing",
+        "Global data sharing"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which component is used to define routes in React Router v6?",
+      "options": ["<Routes>", "<Switch>", "<Router>", "<RouteList>"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which component wraps your entire application for routing to work?",
+      "options": ["<Route>", "<Link>", "<BrowserRouter>", "<RouterProvider>"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How do you navigate to another route programmatically?",
+      "options": [
+        "Using useEffect",
+        "Using useNavigate() hook",
+        "Calling window.location",
+        "Using useRoute()"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useParams() hook?",
+      "options": [
+        "To fetch data from an API",
+        "To read route parameters from the URL",
+        "To navigate to another route",
+        "To read query strings"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which component replaces 'Link' for internal navigation with React Router?",
+      "options": ["<a>", "<Navigate>", "<NavLink>", "<Link>"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "What is the best way to show a loading spinner during data fetching?",
+      "options": [
+        "Using a timer",
+        "Using a conditional render based on loading state",
+        "Directly placing JSX in useEffect",
+        "Always show spinner"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is a best practice when handling API errors in React?",
+      "options": [
+        "Ignore the error",
+        "Use try/catch with async calls and show fallback UI",
+        "Always reload the page",
+        "Render nothing"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is a custom hook in React?",
+      "options": [
+        "A way to customize JSX",
+        "A function that starts with 'use' and encapsulates reusable logic",
+        "A React component with logic",
+        "An event handler"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Why use custom hooks?",
+      "options": [
+        "To improve rendering speed",
+        "To write class components",
+        "To reuse stateful logic across components",
+        "To apply styles dynamically"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which rule must custom hooks follow?",
+      "options": [
+        "They must be async",
+        "They must start with 'use'",
+        "They must be named after the component",
+        "They must return JSX"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What does useMemo do?",
+      "options": [
+        "Creates a new hook",
+        "Memorizes a value to avoid re-computation",
+        "Renders memoized JSX",
+        "Stores state permanently"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which hook is used to memoize functions?",
+      "options": ["useMemo", "useCallback", "useReducer", "useRef"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "When should you use React.memo?",
+      "options": [
+        "To memoize entire apps",
+        "To avoid unnecessary re-renders of functional components",
+        "To replace useEffect",
+        "To memoize props only"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is code splitting in React?",
+      "options": [
+        "Separating JSX and CSS",
+        "Breaking the app into multiple smaller components",
+        "Loading code only when needed to improve performance",
+        "Using multiple reducers"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which React feature enables lazy loading of components?",
+      "options": ["React.lazy", "useEffect", "Suspense", "React.memo"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is <Suspense> used for?",
+      "options": [
+        "Adding suspense effects to UI",
+        "Wrapping lazy-loaded components and showing fallback content",
+        "Handling errors in fetch",
+        "Adding suspense to animations"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is a common use case for useRef?",
+      "options": [
+        "To fetch data from API",
+        "To store mutable values that don't trigger re-render",
+        "To control routing",
+        "To share global state"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "How can you prevent a component from re-rendering unnecessarily?",
+      "options": [
+        "Use useEffect with no dependencies",
+        "Use useState only",
+        "Use React.memo and memoize props/functions",
+        "Use a global variable"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is NOT a performance optimization technique?",
+      "options": [
+        "Code splitting",
+        "Memoizing components",
+        "Lifting state unnecessarily",
+        "Using lazy loading"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What’s the main benefit of splitting large codebases?",
+      "options": [
+        "Better SEO",
+        "Faster initial load time",
+        "Improved typing speed",
+        "Shorter JSX syntax"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which hook can persist data between renders without causing re-render?",
+      "options": ["useState", "useEffect", "useRef", "useMemo"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is a good naming convention for custom hooks?",
+      "options": [
+        "They should start with 'get'",
+        "They should start with 'use'",
+        "They should end with 'Component'",
+        "They must match the file name"
+      ],
+      "correctOption": 1,
+      "points": 10
+    }
+  ]
+}

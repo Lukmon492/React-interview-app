@@ -1,0 +1,926 @@
+{
+  "_comment": "This file is a fake API for React/Tailwind/Testing interview questions",
+  "questions": [
+    {
+      "question": "Which is the most popular JavaScript library?",
+      "options": ["Angular", "React", "Svelte", "Vue"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which company invented React?",
+      "options": ["Google", "Apple", "Netflix", "Facebook"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "What's the fundamental building block of React apps?",
+      "options": ["Components", "Blocks", "Elements", "Effects"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What syntax is used to write HTML in JavaScript files in React?",
+      "options": ["JSX", "TSX", "HTML", "JHTML"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which hook is used to add state to functional components?",
+      "options": ["useEffect", "useReducer", "useState", "useContext"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the virtual DOM in React?",
+      "options": [
+        "A lightweight version of the actual DOM",
+        "A backup of the real DOM",
+        "A mockup of UI components",
+        "A testing environment for components"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which method is called when a component is being removed from the DOM?",
+      "options": [
+        "componentWillUnmount",
+        "componentDidUnmount",
+        "componentRemove",
+        "componentDestroy"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of keys in React lists?",
+      "options": [
+        "To uniquely identify elements in the list",
+        "To style list items differently",
+        "To sort the list automatically",
+        "To add click handlers to list items"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which tool can you use to bootstrap a new React application?",
+      "options": [
+        "React CLI",
+        "create-react-app",
+        "React Starter",
+        "npm init react"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What does React Router do?",
+      "options": [
+        "Manages state in React applications",
+        "Handles navigation between different components",
+        "Optimizes React performance",
+        "Connects React to databases"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which hook replaces componentDidMount in functional components?",
+      "options": [
+        "useEffect with empty dependency array",
+        "useMount",
+        "useComponentDidMount",
+        "useState with initial values"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of PropTypes?",
+      "options": [
+        "To define the shape of component props",
+        "To create prototype components",
+        "To type check JavaScript code",
+        "To validate form inputs"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "How can you optimize performance in React?",
+      "options": [
+        "Using React.memo",
+        "Avoiding unnecessary re-renders",
+        "Using useCallback and useMemo",
+        "All of the above"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "What is Context in React?",
+      "options": [
+        "A way to pass data through the component tree without props",
+        "The execution environment of a function",
+        "The styling context of components",
+        "The testing environment for components"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the difference between controlled and uncontrolled components?",
+      "options": [
+        "Controlled components manage their own state, uncontrolled don't",
+        "Uncontrolled components manage their own state, controlled don't",
+        "There is no difference",
+        "Controlled components are class components, uncontrolled are functional"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is JSX?",
+      "options": [
+        "JavaScript XML",
+        "A templating language",
+        "A superset of JavaScript",
+        "A syntax extension for JavaScript"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which lifecycle method is called after a component updates?",
+      "options": [
+        "componentDidUpdate",
+        "componentWillUpdate",
+        "componentUpdated",
+        "componentHasUpdated"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useReducer hook?",
+      "options": [
+        "To manage complex state logic",
+        "To reduce component size",
+        "To combine multiple states",
+        "To optimize performance"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What are Higher-Order Components (HOC)?",
+      "options": [
+        "Components that render other components",
+        "Functions that take a component and return a new component",
+        "Components with advanced functionality",
+        "Parent components that contain many child components"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is Redux used for?",
+      "options": [
+        "State management",
+        "Routing",
+        "Styling components",
+        "API calls"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the dependency array in useEffect?",
+      "options": [
+        "To specify when the effect should run",
+        "To list all external dependencies",
+        "To optimize performance",
+        "All of the above"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "What is React Fiber?",
+      "options": [
+        "A new reconciliation engine in React",
+        "A data fetching library",
+        "A state management solution",
+        "A testing framework"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What are React Portals?",
+      "options": [
+        "A way to render children into a DOM node outside parent hierarchy",
+        "Navigation components",
+        "Special modal components",
+        "Data transfer objects"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the difference between useState and useRef?",
+      "options": [
+        "useState causes re-renders, useRef doesn't",
+        "useRef causes re-renders, useState doesn't",
+        "There is no difference",
+        "useRef is for class components, useState for functional"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the children prop?",
+      "options": [
+        "A special prop that contains child components",
+        "A prop for rendering lists",
+        "A deprecated feature",
+        "A way to style components"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is server-side rendering in React?",
+      "options": [
+        "Rendering components on the server before sending to client",
+        "A way to test components",
+        "A deprecated feature",
+        "Rendering components without JavaScript"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the key prop?",
+      "options": [
+        "To help React identify which items have changed",
+        "To encrypt component data",
+        "To style components differently",
+        "To create unique event handlers"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the difference between props and state?",
+      "options": [
+        "Props are immutable, state is mutable",
+        "State is immutable, props are mutable",
+        "There is no difference",
+        "Props are for functional components, state for class components"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of React.Fragment?",
+      "options": [
+        "To group multiple elements without adding extra nodes",
+        "To create reusable component templates",
+        "To improve performance",
+        "To handle errors"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What are custom hooks?",
+      "options": [
+        "JavaScript functions that use other hooks",
+        "Special hooks provided by React",
+        "Deprecated feature",
+        "Hooks for class components"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of Error Boundaries?",
+      "options": [
+        "To catch JavaScript errors in components",
+        "To validate form inputs",
+        "To handle API errors",
+        "To test components"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the significance of the strict mode in React?",
+      "options": [
+        "It highlights potential problems in the application",
+        "It makes components render faster",
+        "It enforces TypeScript usage",
+        "It disables certain React features"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the difference between useMemo and useCallback?",
+      "options": [
+        "useMemo memoizes values, useCallback memoizes functions",
+        "useCallback memoizes values, useMemo memoizes functions",
+        "There is no difference",
+        "useMemo is for class components, useCallback for functional"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is React.lazy used for?",
+      "options": [
+        "Code splitting and lazy loading components",
+        "Creating slow-rendering components",
+        "A deprecated feature",
+        "Optimizing state management"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useImperativeHandle hook?",
+      "options": [
+        "To customize the instance value exposed to parent components",
+        "To create imperative animations",
+        "To handle errors",
+        "To manage complex state"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the difference between React and React Native?",
+      "options": [
+        "React is for web, React Native is for mobile",
+        "React Native is newer version of React",
+        "There is no difference",
+        "React is for class components, React Native for functional"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useLayoutEffect hook?",
+      "options": [
+        "To perform side effects after DOM mutations but before paint",
+        "To layout components on the screen",
+        "A deprecated version of useEffect",
+        "To handle responsive design"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is prop drilling?",
+      "options": [
+        "Passing props through multiple levels of components",
+        "A performance optimization technique",
+        "A way to validate props",
+        "A deprecated feature"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What are React hooks?",
+      "options": [
+        "Functions that let you use state and lifecycle features in functional components",
+        "Special React components",
+        "A way to connect to databases",
+        "Deprecated class component features"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useRef hook?",
+      "options": [
+        "To create mutable references that persist across renders",
+        "To reference external libraries",
+        "To create refs to components",
+        "To manage state"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the significance of the reconciliation algorithm?",
+      "options": [
+        "It determines how React updates the DOM",
+        "It handles API responses",
+        "It manages component state",
+        "It tests components"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the Suspense component?",
+      "options": [
+        "To suspend component rendering",
+        "A deprecated feature",
+        "To handle loading states in components",
+        "To pause state updates"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the difference between shallow rendering and mount rendering in tests?",
+      "options": [
+        "Shallow renders only one level deep, mount renders all children",
+        "Mount is faster than shallow",
+        "There is no difference",
+        "Shallow is for functional components, mount for class"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the shouldComponentUpdate method?",
+      "options": [
+        "To optimize performance by preventing unnecessary renders",
+        "To validate component updates",
+        "To handle side effects",
+        "A deprecated feature"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What are render props?",
+      "options": [
+        "Props that control rendering",
+        "Deprecated feature",
+        "A technique for sharing code between components using props",
+        "Special props for functional components"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of React.memo?",
+      "options": [
+        "To create memoized selectors",
+        "To memoize functional components",
+        "A deprecated feature",
+        "To manage memory usage"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the difference between element and component in React?",
+      "options": [
+        "An element is a plain object describing what to render, a component is a function or class",
+        "They are the same thing",
+        "Elements are for class components, components for functional",
+        "Components are instances of elements"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What are controlled components in React?",
+      "options": [
+        "Components with restricted functionality",
+        "Parent components that control children",
+        "Components where form data is handled by React state",
+        "A deprecated feature"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useDebugValue hook?",
+      "options": [
+        "To display custom labels for custom hooks in React DevTools",
+        "To debug components",
+        "To validate values",
+        "A deprecated feature"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the significance of the Babel transpiler in React?",
+      "options": [
+        "It converts JSX and modern JavaScript to browser-compatible code",
+        "It optimizes React performance",
+        "It handles state management",
+        "It's required for React to work"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the dangerouslySetInnerHTML prop?",
+      "options": [
+        "To set HTML directly from React",
+        "To handle dangerous operations",
+        "A deprecated feature",
+        "To sanitize HTML input"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the significance of keys in React lists?",
+      "options": [
+        "They help React identify which items have changed",
+        "They encrypt list data",
+        "They style list items",
+        "They're required for list rendering"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the useTransition hook?",
+      "options": [
+        "To mark some state updates as not urgent",
+        "To handle page transitions",
+        "To animate components",
+        "A deprecated feature"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is Tailwind CSS?",
+      "options": [
+        "A JavaScript framework",
+        "A utility-first CSS framework",
+        "A component library",
+        "A testing framework"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "How does Tailwind differ from traditional CSS frameworks like Bootstrap?",
+      "options": [
+        "Tailwind provides pre-designed components",
+        "Tailwind offers utility classes instead of pre-built components",
+        "Tailwind is JavaScript-based",
+        "There is no difference"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the @apply directive in Tailwind?",
+      "options": [
+        "To apply JavaScript functions",
+        "To extract repeated utility patterns into CSS classes",
+        "To import external styles",
+        "To apply animations"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "How can you customize Tailwind's default theme?",
+      "options": [
+        "By editing the node_modules files",
+        "Through the tailwind.config.js file",
+        "By creating a custom.css file",
+        "Tailwind doesn't support customization"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What does JIT mode stand for in Tailwind CSS?",
+      "options": [
+        "JavaScript In Time",
+        "Just In Time",
+        "Java Integration Tool",
+        "JSON In Tailwind"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "How do you enable dark mode in Tailwind CSS?",
+      "options": [
+        "By adding dark: prefix to classes",
+        "By installing a separate plugin",
+        "By using CSS variables",
+        "Dark mode is enabled by default"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the purge option in Tailwind config?",
+      "options": [
+        "To remove unused CSS in production",
+        "To clean up HTML files",
+        "To delete node_modules",
+        "To optimize images"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which of these is NOT a Tailwind CSS feature?",
+      "options": [
+        "Responsive design utilities",
+        "Pre-built component library",
+        "Hover and focus states",
+        "Customizable design tokens"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "How do you make a responsive grid in Tailwind?",
+      "options": [
+        "Using the grid-cols-{n} utilities",
+        "With custom CSS",
+        "By installing a separate grid plugin",
+        "Tailwind doesn't support grids"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the main advantage of using Tailwind CSS?",
+      "options": [
+        "It reduces CSS file size dramatically",
+        "It allows for rapid UI development without context switching",
+        "It provides ready-to-use beautiful components",
+        "It eliminates the need for HTML"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of code splitting in web optimization?",
+      "options": [
+        "To divide code into smaller chunks that can be loaded on demand",
+        "To split development teams across different codebases",
+        "To separate frontend and backend code",
+        "To create multiple versions of the same application"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which technique helps reduce Cumulative Layout Shift (CLS)?",
+      "options": [
+        "Setting explicit width and height on images",
+        "Using smaller images",
+        "Loading all assets synchronously",
+        "Disabling CSS transitions"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is tree shaking in JavaScript optimization?",
+      "options": [
+        "Removing unused code from the final bundle",
+        "Organizing code in a hierarchical structure",
+        "A technique for minifying CSS",
+        "Shaking the DOM tree for better performance"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which caching strategy is most effective for static assets?",
+      "options": [
+        "Cache-Control: max-age=31536000",
+        "Cache-Control: no-cache",
+        "Cache-Control: must-revalidate",
+        "Not using caching at all"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What does Lazy Loading improve in web performance?",
+      "options": [
+        "Initial page load time by deferring non-critical resources",
+        "JavaScript execution speed",
+        "Database query performance",
+        "CSS parsing time"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+
+    {
+      "question": "What is the purpose of ARIA attributes?",
+      "options": [
+        "To provide additional context to assistive technologies",
+        "To make websites more visually appealing",
+        "To improve SEO rankings",
+        "To add animation effects"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which HTML element is most appropriate for a screen reader to announce a page's main content?",
+      "options": ["<main>", "<div>", "<section>", "<content>"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the minimum color contrast ratio required by WCAG AA standards for normal text?",
+      "options": ["4.5:1", "3:1", "2.5:1", "5:1"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Why should you avoid using only color to convey information?",
+      "options": [
+        "Colorblind users might miss the information",
+        "Colors load slower than text",
+        "Screen readers can't detect colors",
+        "All of the above"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of skip navigation links?",
+      "options": [
+        "To allow keyboard users to skip repetitive content",
+        "To make pages load faster",
+        "To hide navigation from search engines",
+        "To create a mobile-only navigation"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+
+    {
+      "question": "What is RESTful API?",
+      "options": [
+        "An architectural style for designing networked applications",
+        "A protocol for real-time communication",
+        "A database management system",
+        "A frontend framework"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which HTTP status code indicates a successful creation of a resource?",
+      "options": ["200", "201", "204", "301"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of CORS in web APIs?",
+      "options": [
+        "To control which domains can access your API",
+        "To encrypt API responses",
+        "To compress API payloads",
+        "To validate API requests"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which HTTP method should be used to update an existing resource?",
+      "options": ["GET", "POST", "PUT", "DELETE"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is GraphQL's main advantage over REST?",
+      "options": [
+        "Clients can request exactly the data they need",
+        "It's faster for simple requests",
+        "It doesn't require HTTP",
+        "It has built-in caching"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+
+    {
+      "question": "What is JWT commonly used for in APIs?",
+      "options": [
+        "Authentication and authorization",
+        "Data compression",
+        "Request validation",
+        "Response caching"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of API versioning?",
+      "options": [
+        "To introduce breaking changes without affecting existing clients",
+        "To track developer usage",
+        "To improve performance",
+        "To reduce payload size"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which tool is commonly used to document APIs?",
+      "options": ["Swagger/OpenAPI", "Postman", "Jira", "GitHub"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is rate limiting in APIs?",
+      "options": [
+        "Controlling how many requests a client can make",
+        "Speeding up API responses",
+        "Limiting the size of request payloads",
+        "Restricting API access to certain countries"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of OPTIONS HTTP method?",
+      "options": [
+        "To describe the communication options for the target resource",
+        "To create a new resource",
+        "To partially update a resource",
+        "To delete a resource"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the main purpose of unit testing?",
+      "options": [
+        "To test the entire application end-to-end",
+        "To verify individual components or functions work in isolation",
+        "To check UI rendering performance",
+        "To validate database schema"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which testing approach verifies that new code doesn't break existing functionality?",
+      "options": [
+        "Unit testing",
+        "Regression testing",
+        "Performance testing",
+        "Smoke testing"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is a test fixture in the context of testing?",
+      "options": [
+        "A fixed bug in the code",
+        "A set of preconditions needed to run tests",
+        "A type of automated test report",
+        "A testing framework configuration file"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the primary benefit of Test-Driven Development (TDD)?",
+      "options": [
+        "Faster test execution",
+        "More comprehensive test coverage",
+        "Better designed, more maintainable code",
+        "Reduced need for manual testing"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What type of testing focuses on verifying the interaction between integrated components?",
+      "options": [
+        "Unit testing",
+        "Integration testing",
+        "Acceptance testing",
+        "Static testing"
+      ],
+      "correctOption": 1,
+      "points": 10
+    }
+  ]
+}
