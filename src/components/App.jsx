@@ -8,6 +8,9 @@ import Question from "./Question";
 import Progress from "./Progress";
 import FinishScreen from "./FinishScreen";
 import NextButton from "./NextButton";
+import Timer from "./Timer";
+
+const SECS_PER_QUESTION = 30;
 
 const initialState = {
   questions: [],
@@ -17,6 +20,7 @@ const initialState = {
   answer: null,
   point: 0,
   highscore: 0,
+  secondsRemaining: null,
 };
 
 const reducer = (state, action) => {
@@ -26,7 +30,11 @@ const reducer = (state, action) => {
     case "dataFailed":
       return { ...state, status: "failed" };
     case "start":
-      return { ...state, status: "active" };
+      return {
+        ...state,
+        status: "active",
+        secondsRemaining: state.questions.length * SECS_PER_QUESTION,
+      };
 
     case "checkAns": {
       // getting the curQuestion
@@ -44,25 +52,35 @@ const reducer = (state, action) => {
     case "nextQuestion":
       return { ...state, index: state.index + 1, answer: null };
     case "finalQuestion": {
-      return { ...state, status: "finished", highscore: state.point };
+      return {
+        ...state,
+        status: "finished",
+        highscore:
+          state.point > state.highscore ? state.point : state.highscore,
+      };
     }
-    case "reset":
+    case "restart":
       return {
         ...initialState,
         status: "start",
         questions: state.questions,
+        highscore: state.highscore,
       };
+    case "quizTimer":
+      return { ...state, secondsRemaining: state.secondsRemaining - 1 };
     default:
       throw new Error("Unknown Action");
   }
 };
 
 const App = () => {
-  const [{ questions, status, index, point, answer, highscore }, dispatch] =
-    useReducer(reducer, initialState);
+  const [
+    { questions, status, index, point, answer, highscore, secondsRemaining },
+    dispatch,
+  ] = useReducer(reducer, initialState);
 
   const curQuestion = questions.at(index);
-  console.log(curQuestion);
+  // console.log(curQuestion);
 
   // Accessing questions from FAKE API
   useEffect(() => {
@@ -93,7 +111,6 @@ const App = () => {
         {/* Active status */}
         {status === "active" && (
           <div>
-            {console.log(curQuestion["question"])}
             <Progress
               totalQuestions={totalQuestions}
               index={index}
@@ -109,6 +126,7 @@ const App = () => {
               index={index}
               totalQuestions={totalQuestions}
             />
+            <Timer dispatch={dispatch} secondsRemaining={secondsRemaining} />
             <NextButton
               answer={answer}
               index={index}
@@ -117,6 +135,7 @@ const App = () => {
             />
           </div>
         )}
+
         {status === "finished" && (
           <FinishScreen
             point={point}
@@ -125,6 +144,7 @@ const App = () => {
             dispatch={dispatch}
           />
         )}
+
         {/* when data failed */}
         {status === "failed" && <Error />}
       </Main>

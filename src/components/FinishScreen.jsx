@@ -16,10 +16,10 @@ const FinishScreen = ({ point, maxPoint, highscore, dispatch }) => {
         {Math.floor(percentage)}%)
       </p>
 
-      <p className="hoghscore">(Highscore: {highscore} points)</p>
+      <p className="highscore">(Highscore: {highscore} points)</p>
       <button
         className="btn btn-ui"
-        onClick={() => dispatch({ type: "reset" })}
+        onClick={() => dispatch({ type: "restart" })}
       >
         Restart
       </button>
