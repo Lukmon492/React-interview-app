@@ -5,6 +5,7 @@
   --color-dark: #495057;
   --color-medium: #ced4da;
   --color-light: #f1f3f5;
+
   --color-theme: #1098ad;
   --color-accent: #ffa94d;
 }
@@ -25,177 +26,77 @@ body {
   min-height: 100vh;
   color: var(--color-light);
   background-color: var(--color-darkest);
-  padding: 2rem;
+  padding: 3.2rem;
 }
 
-/* Base Mobile Styles */
 .app {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
 }
 
-.main,
-.app-header {
-  width: 100%;
-  max-width: 100%;
+.main {
+  width: 50rem;
 }
 
 .app-header {
-  margin-bottom: 2rem;
-  flex-direction: column;
-  gap: 1.5rem;
+  width: 70rem;
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.error {
   text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 2rem;
+  background-color: #495057;
+  border-radius: 100px;
 }
 
 img {
-  width: 10rem;
+  width: 14rem;
 }
 
 h1 {
   font-family: "Codystar";
-  font-size: 3.5rem;
-  line-height: 1.2;
+  font-size: 5.6rem;
 }
 
 h2 {
-  font-size: 2.8rem;
-  margin-bottom: 1.5rem;
-}
-
-h3 {
-  font-size: 2rem;
-  margin-bottom: 2.5rem;
-}
-
-h4 {
-  font-size: 1.8rem;
-  margin-bottom: 1.8rem;
-}
-
-.error,
-.result,
-.btn {
-  font-size: 1.6rem;
-  padding: 1rem 1.8rem;
-}
-
-.progress {
-  margin-bottom: 2.5rem;
-  grid-template-columns: 1fr;
-  gap: 0.8rem;
-}
-.progress-details {
-  display: flex;
-  justify-content: space-between;
-}
-
-.options {
-  gap: 1rem;
+  font-size: 3.6rem;
   margin-bottom: 2rem;
 }
 
-.btn-option {
-  padding: 1rem 1.8rem;
-  font-size: 1.6rem;
+h3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
 }
 
-.timer,
-.highscore {
-  font-size: 1.6rem;
-  padding: 1rem 2rem;
+h4 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
 }
 
-/* Tablet (768px and up) */
-@media (min-width: 768px) {
-  body {
-    padding: 2.5rem;
-  }
-
-  .main {
-    width: 65rem;
-  }
-
-  .app-header {
-    width: 70rem;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
-  }
-
-  h1 {
-    font-size: 4.5rem;
-  }
-
-  h2 {
-    font-size: 3.2rem;
-  }
-
-  .progress {
-    grid-template-columns: auto auto;
-  }
-}
-
-/* Laptop (1024px and up) */
-@media (min-width: 340px) and (max-width: 780px) {
-  .app {
-    padding: 1rem 2rem;
-  }
-}
-
-/* Laptop (780px and up) */
-@media (min-width: 780px) {
-  .app-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .app-header h1 {
-    padding-top: 1.6rem;
-  }
-}
-
-/* Laptop (1024px and up) */
-@media (min-width: 1024px) {
-  body {
-    padding: 3.2rem;
-  }
-
-  h1 {
-    font-size: 5.6rem;
-  }
-
-  h2 {
-    font-size: 3.6rem;
-  }
-
-  .btn,
-  .error,
-  .result {
-    font-size: 2rem;
-    padding: 1.2rem 2.4rem;
-  }
-
-  .btn-option {
-    font-size: 2rem;
-    padding: 1.2rem 2.4rem;
-  }
-}
-
-/* Desktop (1200px and up) */
-@media (min-width: 1200px) {
-  .main {
-    width: 70rem;
-  }
-}
-
-/* Existing component styles (unchanged but now responsive) */
 .start {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.progress {
+  margin-bottom: 4rem;
+  display: grid;
+  justify-content: space-between;
+  gap: 1.2rem;
+  grid-template-columns: auto auto;
+  font-size: 1.8rem;
+  color: var(--color-medium);
 }
 
 progress {
@@ -218,8 +119,10 @@ progress {
   display: block;
   font-family: inherit;
   color: inherit;
+  font-size: 2rem;
   border: 2px solid var(--color-dark);
   background-color: var(--color-dark);
+  padding: 1.2rem 2.4rem;
   cursor: pointer;
   border-radius: 100px;
   transition: 0.3s;
@@ -244,6 +147,13 @@ progress {
 .options {
   display: flex;
   flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.btn-option {
+  width: 100%;
+  text-align: left;
 }
 
 .btn-option.correct {
@@ -266,7 +176,10 @@ progress {
   color: var(--color-light);
   border-radius: 100px;
   text-align: center;
+  padding: 2rem 0;
+  font-size: 2rem;
   font-weight: 500;
+  margin-bottom: 1.6rem;
 }
 
 .result span {
@@ -275,24 +188,28 @@ progress {
 }
 
 .highscore {
+  font-size: 1.8rem;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 4.8rem;
 }
 
 .loader-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 3rem;
-  gap: 1.2rem;
+  margin-top: 4rem;
+  gap: 1.6rem;
+
   color: var(--color-medium);
   font-size: 1.4rem;
 }
 
 .timer {
   float: left;
+  font-size: 1.8rem;
   color: var(--color-medium);
   border: 2px solid var(--color-dark);
+  padding: 1.35rem 2.8rem;
   border-radius: 100px;
 }
 
