@@ -148,6 +148,16 @@ const App = () => {
         {/* when data failed */}
         {status === "failed" && <Error />}
       </Main>
+      <footer>
+        <p className="copyright">
+          Developed By &#9854;{" "}
+          <span>
+            {" "}
+            <span className="sty">S</span>anni <span className="sty">L</span>
+            ukman
+          </span>
+        </p>
+      </footer>
     </div>
   );
 };
