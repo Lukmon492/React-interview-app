@@ -6,14 +6,17 @@ import Error from "./Error";
 import StartScreen from "./StartScreen";
 import Question from "./Question";
 import Progress from "./Progress";
+import FinishScreen from "./FinishScreen";
+import NextButton from "./NextButton";
 
 const initialState = {
   questions: [],
   index: 0,
-  // ready, error, start, active, finish
+  // ready, error, start, active, finished
   status: "ready",
   answer: null,
   point: 0,
+  highscore: 0,
 };
 
 const reducer = (state, action) => {
@@ -40,18 +43,24 @@ const reducer = (state, action) => {
 
     case "nextQuestion":
       return { ...state, index: state.index + 1, answer: null };
+    case "finalQuestion": {
+      return { ...state, status: "finished", highscore: state.point };
+    }
+    case "reset":
+      return {
+        ...initialState,
+        status: "start",
+        questions: state.questions,
+      };
     default:
       throw new Error("Unknown Action");
   }
 };
 
 const App = () => {
-  const [{ questions, status, index, point, answer }, dispatch] = useReducer(
-    reducer,
-    initialState
-  );
+  const [{ questions, status, index, point, answer, highscore }, dispatch] =
+    useReducer(reducer, initialState);
 
-  console.log(questions);
   const curQuestion = questions.at(index);
   console.log(curQuestion);
 
@@ -97,10 +106,25 @@ const App = () => {
               curQuestion={curQuestion}
               answer={answer}
               dispatch={dispatch}
+              index={index}
+              totalQuestions={totalQuestions}
+            />
+            <NextButton
+              answer={answer}
+              index={index}
+              totalQuestions={totalQuestions}
+              dispatch={dispatch}
             />
           </div>
         )}
-
+        {status === "finished" && (
+          <FinishScreen
+            point={point}
+            maxPoint={maxPoint}
+            highscore={highscore}
+            dispatch={dispatch}
+          />
+        )}
         {/* when data failed */}
         {status === "failed" && <Error />}
       </Main>

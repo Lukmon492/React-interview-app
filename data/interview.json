@@ -483,6 +483,17 @@
       "points": 10
     },
     {
+      "question": "What breaks when a custom hook uses useState during SSR with React Suspense?",
+      "options": [
+        "Hydration mismatch errors",
+        "Hook order violation",
+        "Memory leaks",
+        "Nothing - it's safe"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
       "question": "What is the difference between element and component in React?",
       "options": [
         "An element is a plain object describing what to render, a component is a function or class",
@@ -524,6 +535,17 @@
         "It's required for React to work"
       ],
       "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "In React's reconciliation algorithm, what determines whether a component instance is reused across renders?",
+      "options": [
+        "Component's displayName property",
+        "Exact match of component type and key",
+        "The order of components in the tree",
+        "Memoization with React.memo"
+      ],
+      "correctOption": 1,
       "points": 10
     },
     {
@@ -578,6 +600,7 @@
         "Tailwind is JavaScript-based",
         "There is no difference"
       ],
+
       "correctOption": 1,
       "points": 10
     },

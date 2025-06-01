@@ -4,7 +4,6 @@ const Option = ({ curQuestion, answer, dispatch }) => {
 
   return (
     <>
-      {" "}
       <div className="options">
         {curQuestion.options.map((option, index) => (
           <button
@@ -24,14 +23,6 @@ const Option = ({ curQuestion, answer, dispatch }) => {
           </button>
         ))}
       </div>
-      {answer !== null && (
-        <button
-          className="btn btn-ui"
-          onClick={() => dispatch({ type: "nextQuestion" })}
-        >
-          Next
-        </button>
-      )}
     </>
   );
 };
