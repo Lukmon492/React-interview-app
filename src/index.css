@@ -144,6 +144,13 @@ h4 {
   .app {
     padding: 1rem 2rem;
   }
+  .copyright {
+    font-size: 1.8rem;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 /* Laptop (780px and up) */
